@@ -1,6 +1,6 @@
 {
   "name": "shadowhawk",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Discord bot for tracking voice traffic and reactions.",
   "main": "index.js",
   "scripts": {
