@@ -59,10 +59,10 @@ async function messageReaction(action, reaction, user) {
       return;
     }
   }
-  let nickname = reaction.message.guild.member(user).nickname;
+  let displayName = reaction.message.guild.member(user).displayName;
   let verb = action + (action === 'add' ? 'ed' : 'd');
   let preposition = (action === 'add' ? 'to' : 'from');
-  let message = `**${nickname}** ${verb} ${reaction.emoji.name} (${reaction.count}) ${preposition} \`\`\`\n${reaction.message.content}\n\`\`\``;
+  let message = `**${displayName}** ${verb} ${reaction.emoji.name} (${reaction.count}) ${preposition} \`\`\`\n${reaction.message.content}\n\`\`\``;
   Reactions.messages.push(message);
 }
 
